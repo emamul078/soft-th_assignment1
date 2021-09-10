@@ -1,6 +1,9 @@
-public class MyFancyJavaProjectApplication {  
+public class MyFancyJavaProjectApplication { 
+
  public static void main(String args[])  
   {    
+    DbConnection sing = DbConnection.getDbConnection("dbUser", "dbPassword", "dbName");
+    
     int n1=0,n2=1,n3,i,count=10;    
 
 System.out.println("Fibonacci Series till " + n + " terms:");  
